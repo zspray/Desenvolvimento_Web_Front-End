@@ -1,0 +1,55 @@
+<div class="hello-world-page">
+    <div class="hello-card">
+      <div class="hello-badge">Hello, World!</div>
+  
+      <h1 class="hello-title">
+        Bem-vindo ao <span>melhor Hello World</span>
+      </h1>
+  
+      <p class="hello-subtitle">
+        Todo grande projeto começa com uma mensagem simples.
+      </p>
+  
+      <div class="hello-grid">
+        <div class="hello-panel">
+          <h2>Por que começamos com “Hello World”?</h2>
+          <p>
+            É o primeiro contato com uma nova linguagem, framework ou tecnologia.
+            Se você está vendo esta página, significa que o Angular já está
+            rodando e você está pronto para dar o próximo passo.
+          </p>
+        </div>
+  
+        <div class="hello-panel">
+          <h2>O que você pode aprender aqui?</h2>
+          <ul>
+            <li>Como estruturar componentes no Angular</li>
+            <li>Como usar HTML e CSS para criar layouts bonitos</li>
+            <li>Como evoluir de um simples texto para uma aplicação de verdade</li>
+          </ul>
+        </div>
+  
+        <div class="hello-panel hello-highlight">
+          <h2>Desafio para você</h2>
+          <p>
+            Modifique esta página, troque textos, cores, adicione novos blocos.
+            Transforme este “Hello World” na sua marca registrada como
+            desenvolvedor(a).
+          </p>
+        </div>
+      </div>
+  
+      <button class="hello-button" (click)="toggleMessage()">
+        {{ showMessage ? 'Esconder mensagem secreta' : 'Mostrar mensagem secreta' }}
+      </button>
+  
+      <p class="hello-secret" *ngIf="showMessage">
+        🌟 Parabéns! Você já deu um passo importante no universo do desenvolvimento
+        web com Angular. Continue explorando, errando, testando e aprendendo.
+      </p>
+  
+      <footer class="hello-footer">
+        Feito com <span class="heart">♥</span> em Angular.
+      </footer>
+    </div>
+  </div>

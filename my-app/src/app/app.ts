@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { OlamundoComponent } from './olamundo/olamundo';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
+  standalone: true,
+  imports: [RouterOutlet, OlamundoComponent]
 })
-export class App {
-  protected readonly title = signal('my-app');
+export class AppComponent {
+  title = 'my-app';
 }
