@@ -1,18 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
 
-import { Olamundo } from './olamundo';
+import { OlamundoComponent } from './olamundo';
 
-describe('Olamundo', () => {
-  let component: Olamundo;
-  let fixture: ComponentFixture<Olamundo>;
+describe('OlamundoComponent', () => {
+  let component: OlamundoComponent;
+  let fixture: ComponentFixture<OlamundoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Olamundo]
+      declarations: [OlamundoComponent],
+      imports: [CommonModule]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Olamundo);
+    fixture = TestBed.createComponent(OlamundoComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
